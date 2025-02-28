@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>의사 클래스 & 의사 요소</title>
+    <style>
+      .menu {
+        padding: 10px;
+        border-bottom: 1px solid black;
+      }
+      .menu > li {
+        display: inline-block;
+        text-align: center;
+      }
+      li > a {
+        display: inline-block;
+        width: 80px;
+        padding: 10px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        background-color: gray;
+      }
+      a:active {
+        color: white;
+        background-color: black;
+      }
+      li:nth-child(n) {
+        font-size: 20px;
+      }
+      a::before {
+        content: '보기';
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="#">사전</a></li>
+      <li><a href="#">뉴스</a></li>
+      <li><a href="#">증권</a></li>
+      <li><a href="#">지도</a></li>
+    </ul>
+  </body>
+</html>
