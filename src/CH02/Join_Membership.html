@@ -8,6 +8,123 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>회원가입</title>
+    <style>
+      /* 기본 스타일 설정 */
+      * {
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* 회원가입 폼 컨테이너 */
+      .container {
+        width: 400px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* 제목 */
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      /* 필수 입력 및 취미 섹션 */
+      fieldset {
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      /* 입력 필드 스타일 */
+      input[type='text'],
+      input[type='email'],
+      input[type='password'],
+      input[type='tel'] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      /* 입력 필드 포커스 효과 */
+      input:focus {
+        border-color: #ffcc00;
+        outline: none;
+        box-shadow: 0px 0px 5px rgba(255, 204, 0, 0.5);
+      }
+
+      /* 체크박스 & 라디오 버튼 스타일 */
+      label {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+
+      input[type='checkbox'],
+      input[type='radio'] {
+        margin-right: 5px;
+      }
+
+      /* 버튼 스타일 */
+      input[type='submit'],
+      button {
+        width: 48%;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type='submit'] {
+        background-color: #ffcc00;
+        color: black;
+        font-weight: bold;
+      }
+
+      button {
+        background-color: #ccc;
+        color: black;
+      }
+
+      input[type='submit']:hover {
+        background-color: #ffdb4d;
+      }
+
+      button:hover {
+        background-color: #bbb;
+      }
+
+      /* 로그인 링크 */
+      .login-link {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .login-link a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .login-link a:hover {
+        color: #ffcc00;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -49,13 +166,12 @@
               <input type="text" id="tell" name="tell" required />
             </li>
             <input type="submit" value="가입하기" />
-              &nbsp;
-              &nbsp;
+            &nbsp; &nbsp;
             <button>취소</button>
           </ul>
-            <div class="login-link">
-                이미 계정이 있나요? <a href="#">로그인</a>
-            </div>
+          <div class="login-link">
+            이미 계정이 있나요? <a href="#">로그인</a>
+          </div>
         </fieldset>
 
         <fieldset>
